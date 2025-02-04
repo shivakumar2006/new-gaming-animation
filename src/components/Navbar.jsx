@@ -71,15 +71,22 @@ const Navbar = () => {
                             title='products'
                             rightIcon={<TiLocationArrow />}
                             containerClass='bg-blue-50 md:flex hidden items-center justify-center gap-1'
+                        /> 
+
+                        <Button 
+                            id='metagame-button'
+                            title='whitepaper'
+                            rightIcon={<TiLocationArrow />}
+                            containerClass='bg-blue-50 md:flex hidden items-center justify-center gap-1'
                         />
                     </div>      
 
                     <div className='flex h-full items-center'>
                         <div className='hidden md:block'>
                             {navItems.map((item) => (
-                                <a key={item} href={`#${item.toLowerCase()}`} className='nav-hover-btn'>
+                                <button key={item} href={`#${item.toLowerCase()}`} className='nav-hover-btn'>
                                     {item}
-                                </a>
+                                </button>
                             ))}
                         </div>
 
